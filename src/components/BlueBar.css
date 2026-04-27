@@ -1,0 +1,22 @@
+.blue-bar {
+  background: #0282f9;
+  padding: 30px 0;
+}
+
+.blue-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.item img {
+  width: 40px;
+}

@@ -1,4 +1,4 @@
-
+import "./BlueBar.css";
 function BlueBar() {
   return (
     <section className="blue-bar">
