@@ -1,0 +1,27 @@
+header {
+  background-color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img {
+  width: 80px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: #0282f9;
+}
