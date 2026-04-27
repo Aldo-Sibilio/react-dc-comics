@@ -1,0 +1,11 @@
+main {
+  background-color: #1c1c1c;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.main-content h2 {
+  color: white;
+  margin-left: 150px;
+}
