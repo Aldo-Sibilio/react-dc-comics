@@ -1,4 +1,4 @@
-
+import "./Footer.css";
 function Footer() {
   return (
     <footer>
@@ -41,6 +41,7 @@ function Footer() {
           </div>
 
         </div>
+         <img src="/img/dc-logo-bg.png" alt="DC Logo" className="footer-logo-bg" />
       </div>
 
       <div className="footer-bottom">
