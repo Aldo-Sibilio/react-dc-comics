@@ -2,35 +2,41 @@ import "./Main.css";
 import comics from "../comics";
 
 function Main() {
-
   return (
-
     <main>
 
-      <div className="comics-container">
+      {/* Immagine grande in cima */}
+      <div className="jumbotron">
+        <img src="/img/jumbotron.jpg" alt="DC Comics" />
+      </div>
 
-        {comics.map(function (comic) {
+      {/* Etichetta + griglia fumetti */}
+      <div className="comics-section">
+        <div className="container">
 
-          return (
+          <div className="current-series-label">CURRENT SERIES</div>
 
-            <div className="comic-card" key={comic.id}>
+          <div className="comics-grid">
+            {comics.map(function (comic) {
+              return (
+                <div className="comic-card" key={comic.id}>
+                  <img src={comic.thumb} alt={comic.title} />
+                  <h4>{comic.title}</h4>
+                </div>
+              );
+            })}
+          </div>
 
-              <img src={comic.thumb} alt={comic.title} />
-
-              <h4>{comic.title}</h4>
-
-            </div>
-
-          );
-
-        })}
-
+        </div>
+      </div>
+      
+      {/* Bottone load more */}
+      <div className="load-more">
+        <button>LOAD MORE</button>
       </div>
 
     </main>
-
   );
-
 }
 
 export default Main;
