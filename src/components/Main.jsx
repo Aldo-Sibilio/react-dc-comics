@@ -1,5 +1,6 @@
 import "./Main.css";
-import comics from "../comics";
+import comics from "../comics.js";
+import ComicCard from "./ComicCard";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
           <div className="current-series-label">CURRENT SERIES</div>
 
           <div className="comics-grid">
+            {/*
             {comics.map(function (comic) {
               return (
                 <div className="comic-card" key={comic.id}>
@@ -24,12 +26,15 @@ function Main() {
                   <h4>{comic.title}</h4>
                 </div>
               );
-            })}
+            })} */}
+             {comics.map(function (comic) {
+              return <ComicCard comic={comic} key={comic.id} />;
+            })} 
           </div>
 
         </div>
       </div>
-      
+
       {/* Bottone load more */}
       <div className="load-more">
         <button>LOAD MORE</button>
